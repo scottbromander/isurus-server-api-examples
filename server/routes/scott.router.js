@@ -13,7 +13,7 @@ const googleMapsClient = require('@google/maps').createClient({
  */
 router.get('/', (req, res) => {
 
-    googleMapsClient.geocode({address: '2622 Radisson Woods Drive, Blaine, MN 55449'})
+    googleMapsClient.geocode({address: '1600 Amphitheatre Parkway, Mountain View, CA'})
     .asPromise()
     .then((response) => {
         console.log(response.json.results);
